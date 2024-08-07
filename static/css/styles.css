@@ -1,0 +1,41 @@
+html{
+    background-color: var(--bs-dark);
+}
+
+* {
+    transition: .5;
+}
+
+#video {
+    border-radius: 25px;
+}
+
+.btn-pad {
+    position: absolute;
+    bottom: 50px; /* Расположение от верхней границы */
+    left: 40px; /* Расположение от левой границы */
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Расстояние между кругами */
+}
+
+.round-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #ababb2 ; /* Цвет фона */
+    border-radius: 50%; /* Делает элемент круглым */
+    opacity: 70%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 254, 254, 0.63);
+}
+
+.round-btn:hover{
+    background-color: #f5f5ff;
+}
+
+.icon {
+    color: black;
+    font-size: 24px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARC Видеоинспекция</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/arc.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body style="background-color:  var(--bs-dark);">
+    <div class="container bg-dark content">
+        <div class="row">
+            <div class="col text-center mb-1 p-1">
+                <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="" height="50">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <img id="video" src="{{ url_for('video_feed') }}" class="img_fluid shadow-lg">
+            </div>
+        </div>
+    </div>
+
+    <div class="container btn-pad">
+        <div id="1" class="round-btn d-flex align-items-center justify-content-center" title="Прибавить скорость">
+            <i class="icon icon-plus"></i>
+        </div>
+        <div id="2" class="round-btn d-flex align-items-center justify-content-center" title="Убавить скорость">
+            <i class="icon icon-minus"></i>
+        </div>
+        <div id="3" class="round-btn d-flex align-items-center justify-content-center" title="Вперёд">
+            <i class="icon icon-angle-double-up"></i>
+        </div>
+        <div id="4" class="round-btn d-flex align-items-center justify-content-center" title="Назад">
+            <i class="icon icon-angle-double-down"></i>
+        </div>
+        <div id="5" class="round-btn d-flex align-items-center justify-content-center" title="Выключить моторы">
+            <i class="icon icon-cancel"></i>
+        </div>
+        <div id="6" class="round-btn d-flex align-items-center justify-content-center" title="Закрытие">
+            <i class="icon icon-resize-small"></i>
+        </div>
+        <div id="7" class="round-btn d-flex align-items-center justify-content-center" title="Открытие">
+            <i class="icon icon-resize-full"></i>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
