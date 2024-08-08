@@ -2,8 +2,17 @@ html{
     background-color: var(--bs-dark);
 }
 
-* {
-    transition: .5;
+
+.logo {
+    height: 50px;
+    transition: 1s;
+    opacity: 80%;
+}
+
+.logo:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+    
 }
 
 #video {
@@ -13,7 +22,16 @@ html{
 .btn-pad {
     position: absolute;
     bottom: 50px; /* Расположение от верхней границы */
-    left: 40px; /* Расположение от левой границы */
+    left: 10px; /* Расположение от левой границы */
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Расстояние между кругами */
+}
+
+.btn-pad-color {
+    position: absolute;
+    bottom: 50px; /* Расположение от верхней границы */
+    left: 90px; /* Расположение от левой границы */
     display: flex;
     flex-direction: column;
     gap: 25px; /* Расстояние между кругами */
@@ -29,10 +47,15 @@ html{
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(255, 254, 254, 0.63);
+    transition: .5;
 }
 
 .round-btn:hover{
     background-color: #f5f5ff;
+}
+
+.active {
+    opacity: 100%;
 }
 
 .icon {

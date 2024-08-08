@@ -12,18 +12,25 @@
 <body style="background-color:  var(--bs-dark);">
     <div class="container bg-dark content">
         <div class="row">
-            <div class="col text-center mb-1 p-1">
-                <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="" height="50">
+            <div class="col text-center mb-2 p-2">
+                <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="" href="https://arc-innovative.ru/" class="logo">
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-1">
             <div class="col text-center">
-                <img id="video" src="{{ url_for('video_feed') }}" class="img_fluid shadow-lg">
+                <img id="video" src="{{ url_for('video_feed') }}" class="img_fluid" height="700">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-6 text-center">
+                <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                    <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container btn-pad">
+    <div class="container btn-pad control-btn">
         <div id="1" class="round-btn d-flex align-items-center justify-content-center" title="Прибавить скорость">
             <i class="icon icon-plus"></i>
         </div>
@@ -44,6 +51,24 @@
         </div>
         <div id="7" class="round-btn d-flex align-items-center justify-content-center" title="Открытие">
             <i class="icon icon-resize-full"></i>
+        </div>
+    </div>
+
+    <div class="container btn-pad-color">
+        <div id="8" class="round-btn d-flex align-items-center justify-content-center" title="Стандартный">
+            S
+        </div>
+        <div id="9" class="round-btn d-flex align-items-center justify-content-center" title="Холодный">
+            C
+        </div>
+        <div id="10" class="round-btn d-flex align-items-center justify-content-center" title="Радуга">
+            R
+        </div>
+        <div id="11" class="round-btn d-flex align-items-center justify-content-center" title="Горячий">
+            H
+        </div>
+        <div id="12" class="round-btn d-flex align-items-center justify-content-center" title="Джет">
+            J
         </div>
     </div>
     
